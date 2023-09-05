@@ -7,7 +7,7 @@
 &emsp;In December 2022, the article "Mega-scale experimental analysis of protein folding stability in biology and protein design" was published. Within its framework, the largest number of measured effects of mutations was obtained. Based on the obtained data, we attempted to build a model for predicting the effects of mutations within the framework of kaggle-competition https://www.kaggle.com/competitions/novozymes-enzyme-stability-prediction. One of the problems of assessing the accuracy of the constructed models is splitting the dataset into training and test sets. We propose to divide mutations into equivalence classes and train on some classes and test on others. 
 # Method 
 
-&emsp;To solve the problem, we will consider single mutations in proteins no longer than 100 amino acids. Then we need to cluster 19*20 = 380 possible mutations. We will use hierarchical clustering, in which we will use the Spearman correlation as the distance between mutations (the method of its calculation will be described below): $sqrt(2(1-|p|))$
+&emsp;To solve the problem, we will consider single mutations in proteins no longer than 100 amino acids. Then we need to cluster 19*20 = 380 possible mutations. We will use hierarchical clustering, in which we will use the Spearman correlation as the distance between mutations (the method of its calculation will be described below): $sqrt(1-|p|)$ or $1 - |p|$ 
 
 &emsp;Now we will tell how we will calculate the correlation. Consider a pair of mutations, for example, WQ and AE (total 19*20 = 380 possible mutations). We construct a sequence of pairs of these two mutations, where each pair satisfies the following conditions: 
 
@@ -21,6 +21,10 @@
 &emsp; As a clustering quality metric, we used Silhouette(https://en.wikipedia.org/wiki/Silhouette_(clustering))
 # Result
 
+&emsp;We implemented the calculation of correlations in Python. To reproduce the results, unzip correlation_between_mutations.zip and run the following command from the console:
+
 ```console
 ./run.sh mutation_data.scv <path_output_scv_file> 
 ```
+&emsp;Our resulting correlations are in correlation_between_mutation.csv
+
