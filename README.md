@@ -13,7 +13,7 @@
 
 &emsp;&emsp;occurred in the same protein 
 
-&emsp;&emsp;happened close in space(distance less than 6 Angstrem) 
+&emsp;&emsp;happened close in space(distance less than 8 Angstrem) 
 
 
 &emsp;Next, we calculate the Spearman correlation for each pair mutations. The choice of Spearman's correlation instead of Pearson's is due to the fact that the distribution does not obey the normal law.
@@ -27,4 +27,6 @@
 ./run.sh mutation_data.scv <path_output_scv_file> 
 ```
 &emsp;Our resulting correlations are in correlation_between_mutation.csv
+&emsp;Clustering can be seen in jupyter-notebook. We used Ward Linkage method for combining clusters in agglomerative approach. 
+
 
