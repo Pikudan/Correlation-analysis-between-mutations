@@ -40,4 +40,4 @@
 
   &emsp;It can be seen that the classes are formed according to the initial amino acids and, with better clustering, 19-20 clusters are formed. 
   # Conclusion
-&emsp;19-20 clusters were obtained, which can be identified with amino acids. Such a quite logical division can be used to make a decision when dividing into samples. The researcher can select two clusters in the test and training data, and take the averaged value as the accuracy of the model.
+&emsp;19-20 clusters of mutations were obtained, which can be identified by amino acids. Such a quite logical division can be used to make a decision when dividing into samples. The researcher can choose two clusters in the test and training data and take the average accuracy of the model over such partitions.
