@@ -26,7 +26,8 @@
 ```console
 ./run.sh mutation_data.scv <path_output_scv_file> 
 ```
-&emsp;Our resulting correlations are in correlation_between_mutation.csv
-&emsp;Clustering can be seen in jupyter-notebook. We used Ward Linkage method for combining clusters in agglomerative approach. 
+&emsp;Our resulting correlations are in correlation_between_mutation.csv 
+
+&emsp;Clustering can be seen in hierarchy_clattering_python.html. We used Ward/Average/Complete Linkage method for combining clusters in agglomerative approach. The best silhouette metric was obtained if the model was obtained using Ward Linkage and a distance of $1 - |p|$.
 
 
