@@ -13,7 +13,7 @@
 
 &emsp;&emsp;occurred in the same protein 
 
-&emsp;&emsp;happened close in space(distance less than 8 Angstrem) 
+&emsp;&emsp;happened close in space(distance less than 6 Angstrem) 
 
 
 &emsp;Next, we calculate the Spearman correlation for each pair mutations. The choice of Spearman's correlation instead of Pearson's is due to the fact that the distribution does not obey the normal law.
