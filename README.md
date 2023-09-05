@@ -28,6 +28,16 @@
 ```
 &emsp;Our resulting correlations are in correlation_between_mutation.csv 
 
-&emsp;Clustering can be seen in hierarchy_clattering_python.html. We used Ward/Average/Complete Linkage method for combining clusters in agglomerative approach. The best silhouette metric was obtained if the model was obtained using Ward Linkage and a distance of $1 - |p|$.
+&emsp;Clustering can be seen in hierarchy_clattering_python.html. We used Ward/Average/Complete Linkage method for combining clusters in agglomerative approach. The best silhouette metric was obtained if the model was obtained using Ward Linkage and a distance of $1 - |p|$. 
+&emsp;Dendogram of best clustering 
+
+<img width="983" alt="image" src="https://github.com/Pikudan/Correlation-analysis-between-mutations/assets/89961174/40587489-a9a6-4776-bd1c-de127fd13dab">
+&emsp;An example part of clustering, where red is a high correlation, green is a correlation close to zero 
+
+<img width="1286" alt="image" src="https://github.com/Pikudan/Correlation-analysis-between-mutations/assets/89961174/d6e6a8f0-cd63-4a7f-b70a-bbd4012fc113">
 
 
+
+  &emsp;It can be seen that the classes are formed according to the initial amino acids and, with better clustering, 19-20 clusters are formed. 
+  # Conclusion
+&emsp;19-20 clusters were obtained, which can be identified with amino acids. Such a quite logical division can be used to make a decision when dividing into samples. The researcher can select two clusters in the test and training data, and take the averaged value as the accuracy of the model.
